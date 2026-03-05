@@ -25,12 +25,26 @@ public class Prática01 {
         int idade = sc.nextInt();
         
          System.out.print("Digite a altur: ");
-        float altura = sc.nextInt();
+        float altura = sc.nextFloat();
         
          System.out.print("Digite o peso: ");
-        float peso = sc.nextInt();
+        float peso = sc.nextFloat();
         
-        
+   Pessoa p = new Pessoa();
+    p.setName(nome);
+    p.setSobreNome(Sobrenome);
+    p.setIdade(idade);
+    p.setAltura(altura);
+    p.setPeso(peso);
+    
+    float imc = p.CalculaIMC(peso, altura);
+    p.setImc(imc);
+
+    System.out.println("\nNome: " + p.getName() + " " + Sobrenome);
+    System.out.println("Idade: " + idade);
+    System.out.println("IMC: " + imc);
+
+    p.InformaObesidade(imc);
         
     }
 }
