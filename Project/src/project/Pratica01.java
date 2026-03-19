@@ -14,7 +14,7 @@ public class Pratica01 {
         System.out.print("Digite o valor do cateto 2: ");
         double c2 = sc.nextDouble();
 
-        // Criando objeto
+        
         TrianguloRetangulo t = new TrianguloRetangulo(c1, c2);
 
         
